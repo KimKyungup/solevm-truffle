@@ -9,7 +9,7 @@ const EthereumRuntime = artifacts.require('EthereumRuntime.sol');
 
 contract('Runtime', function () {
   let rt;
-  
+
   before(async () => {
     rt = new Runtime(await EthereumRuntime.new());
   });
@@ -22,6 +22,7 @@ contract('Runtime', function () {
       assert.deepEqual(toNum(r.stack), [3]);
       assert.deepEqual(r.pc, 2);
       assert.deepEqual(r.memory, '0x');
+      console.log("first execute : ",r.accounts);
 
       r = await rt.executeAndStop(code, data, [0, 4, BLOCK_GAS_LIMIT, BLOCK_GAS_LIMIT]);
       assert.deepEqual(toNum(r.stack), [3, 5]);
@@ -47,6 +48,10 @@ contract('Runtime', function () {
 
     fixtures.forEach(fixture => {
       const { code, pc, opcodeUnderTest } = getCode(fixture);
+      console.log("코드:",code);
+      console.log("프로그램카운터:",pc);
+      console.log("옵코드언더테스트:",opcodeUnderTest);
+      console.log("");
 
       it(opcodeUnderTest, async () => {
         const initialStack = fixture.stack || [];
@@ -62,6 +67,16 @@ contract('Runtime', function () {
           [pc, 0, blockGasLimit, gasLimit],
           initialStack, initialMemory, accounts, accountsCode, logs, logsData,
         );
+        // console.log("결과값:", res);
+        console.log("스택:", initialStack);
+        console.log("메모리:", initialMemory);
+        console.log("어카운트,코드:", { accounts, accountsCode });
+        console.log("콜데이터:", callData);
+        console.log("블록가스리밋:", blockGasLimit);
+        console.log("가스리밋:", gasLimit);
+        console.log("로그:", logs);
+        console.log("로그데이터:", logsData);
+        console.log("");
 
         if (fixture.result.stack) {
           assert.deepEqual(toNum(res.stack), fixture.result.stack);

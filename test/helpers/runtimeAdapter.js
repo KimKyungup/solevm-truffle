@@ -20,6 +20,12 @@ export default class RuntimeAdapter {
       .then(unpack);
   };
 
+  initAndExecuteTest (code, data, params, stack, memory, accounts, accountsCode, logs, logsData) {
+    assert(params.length === 4);
+    return this.runtimeContract
+      .executeTest(code, data, params, stack, memory, accounts, accountsCode, logs, logsData);
+  };
+
   execute (code, data, gasLimit = BLOCK_GAS_LIMIT) {
     return this.runtimeContract
       .execute(code, data, [0, 0, BLOCK_GAS_LIMIT, gasLimit], [], '0x', [], '0x', [], '0x')

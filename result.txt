@@ -1,0 +1,1837 @@
+
+> solevm-truffle@0.1.0 test /Users/kevin/dev/solevm-truffle
+> scripts/test.sh "test/ethereumRuntime.js"
+
+Starting our own ganache instance
+Compiling ./contracts/EVMAccounts.slb...
+Compiling ./contracts/EVMConstants.sol...
+Compiling ./contracts/EVMLogs.slb...
+Compiling ./contracts/EVMMemory.slb...
+Compiling ./contracts/EVMStack.slb...
+Compiling ./contracts/EVMStorage.slb...
+Compiling ./contracts/EVMUtils.slb...
+Compiling ./contracts/EthereumRuntime.sol...
+Compiling ./contracts/MemOps.slb...
+Compiling ./contracts/Migrations.sol...
+Compiling ./contracts/mocks/EVMStackMock.sol...
+
+Compilation warnings encountered:
+
+/Users/kevin/dev/solevm-truffle/contracts/MemOps.slb:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EVMStorage.slb:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EVMUtils.slb:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EVMAccounts.slb:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EVMConstants.sol:3:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EVMLogs.slb:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EVMMemory.slb:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EVMStack.slb:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:3:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:111:18: Warning: Naming function type parameters is deprecated.
+        function(bytes memory input) internal pure returns (bytes memory ret, uint errno)[9] p;
+                 ^----------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:111:61: Warning: Naming function type return parameters is deprecated.
+        function(bytes memory input) internal pure returns (bytes memory ret, uint errno)[9] p;
+                                                            ^--------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:111:79: Warning: Naming function type return parameters is deprecated.
+        function(bytes memory input) internal pure returns (bytes memory ret, uint errno)[9] p;
+                                                                              ^--------^
+,/Users/kevin/dev/solevm-truffle/contracts/mocks/EVMStackMock.sol:3:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EVMLogs.slb:31:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function add(Logs memory self, LogEntry memory entry) internal pure {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EVMLogs.slb:31:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function add(Logs memory self, LogEntry memory entry) internal pure {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EVMLogs.slb:31:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function add(Logs memory self, LogEntry memory entry) internal pure {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EVMLogs.slb:31:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function add(Logs memory self, LogEntry memory entry) internal pure {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EVMStack.slb:72:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function pop(Stack self) internal pure returns (uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EVMStack.slb:72:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function pop(Stack self) internal pure returns (uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EVMStack.slb:72:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function pop(Stack self) internal pure returns (uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EVMStack.slb:72:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function pop(Stack self) internal pure returns (uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EVMStack.slb:72:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function pop(Stack self) internal pure returns (uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EVMStack.slb:72:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function pop(Stack self) internal pure returns (uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EVMStack.slb:72:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function pop(Stack self) internal pure returns (uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EVMStack.slb:72:5: Warning: Variable is shadowed in inline assembly by an instruction of the same name
+    function pop(Stack self) internal pure returns (uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:622:18: Warning: The "shl" instruction is only available for Constantinople-compatible VMs. You are currently compiling for "byzantium", where it will be interpreted as an invalid instruction.
+            c := shl(a, b)
+                 ^-------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:632:18: Warning: The "shr" instruction is only available for Constantinople-compatible VMs. You are currently compiling for "byzantium", where it will be interpreted as an invalid instruction.
+            c := shr(a, b)
+                 ^-------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:642:18: Warning: The "sar" instruction is only available for Constantinople-compatible VMs. You are currently compiling for "byzantium", where it will be interpreted as an invalid instruction.
+            c := sar(a, b)
+                 ^-------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:468:96: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function handlePreC_ECRECOVER(bytes memory input) internal pure returns (bytes memory ret, uint errno) {
+                                                                                               ^--------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:478:93: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function handlePreC_SHA256(bytes memory input) internal pure returns (bytes memory ret, uint errno) {
+                                                                                            ^--------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:484:96: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function handlePreC_RIPEMD160(bytes memory input) internal pure returns (bytes memory ret, uint errno) {
+                                                                                               ^--------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:490:95: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function handlePreC_IDENTITY(bytes memory input) internal pure returns (bytes memory ret, uint errno) {
+                                                                                              ^--------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:495:76: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function handlePreC_UNIMPLEMENTED(bytes memory) internal pure returns (bytes memory ret, uint errno) {
+                                                                           ^--------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:501:25: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function handleSTOP(EVM memory state) internal pure returns (uint) {
+                        ^--------------^
+,/Users/kevin/dev/solevm-truffle/contracts/EthereumRuntime.sol:972:29: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function handleJUMPDEST(EVM memory state) internal pure returns (uint) {
+                            ^--------------^
+
+코드: 0x01
+프로그램카운터: 0
+옵코드언더테스트: ADD
+
+코드: 0x02
+프로그램카운터: 0
+옵코드언더테스트: MUL
+
+코드: 0x03
+프로그램카운터: 0
+옵코드언더테스트: SUB
+
+코드: 0x04
+프로그램카운터: 0
+옵코드언더테스트: DIV
+
+코드: 0x05
+프로그램카운터: 0
+옵코드언더테스트: SDIV
+
+코드: 0x06
+프로그램카운터: 0
+옵코드언더테스트: MOD
+
+코드: 0x07
+프로그램카운터: 0
+옵코드언더테스트: SMOD
+
+코드: 0x08
+프로그램카운터: 0
+옵코드언더테스트: ADDMOD
+
+코드: 0x09
+프로그램카운터: 0
+옵코드언더테스트: MULMOD
+
+코드: 0x0a
+프로그램카운터: 0
+옵코드언더테스트: EXP
+
+코드: 0x0b
+프로그램카운터: 0
+옵코드언더테스트: SIGNEXTEND
+
+코드: 0x10
+프로그램카운터: 0
+옵코드언더테스트: LT
+
+코드: 0x11
+프로그램카운터: 0
+옵코드언더테스트: GT
+
+코드: 0x12
+프로그램카운터: 0
+옵코드언더테스트: SLT
+
+코드: 0x13
+프로그램카운터: 0
+옵코드언더테스트: SGT
+
+코드: 0x14
+프로그램카운터: 0
+옵코드언더테스트: EQ
+
+코드: 0x15
+프로그램카운터: 0
+옵코드언더테스트: ISZERO
+
+코드: 0x16
+프로그램카운터: 0
+옵코드언더테스트: AND
+
+코드: 0x17
+프로그램카운터: 0
+옵코드언더테스트: OR
+
+코드: 0x18
+프로그램카운터: 0
+옵코드언더테스트: XOR
+
+코드: 0x19
+프로그램카운터: 0
+옵코드언더테스트: NOT
+
+코드: 0x1a
+프로그램카운터: 0
+옵코드언더테스트: BYTE
+
+코드: 0x50
+프로그램카운터: 0
+옵코드언더테스트: POP
+
+코드: 0x80
+프로그램카운터: 0
+옵코드언더테스트: DUP1
+
+코드: 0x81
+프로그램카운터: 0
+옵코드언더테스트: DUP2
+
+코드: 0x82
+프로그램카운터: 0
+옵코드언더테스트: DUP3
+
+코드: 0x83
+프로그램카운터: 0
+옵코드언더테스트: DUP4
+
+코드: 0x84
+프로그램카운터: 0
+옵코드언더테스트: DUP5
+
+코드: 0x85
+프로그램카운터: 0
+옵코드언더테스트: DUP6
+
+코드: 0x86
+프로그램카운터: 0
+옵코드언더테스트: DUP7
+
+코드: 0x87
+프로그램카운터: 0
+옵코드언더테스트: DUP8
+
+코드: 0x88
+프로그램카운터: 0
+옵코드언더테스트: DUP9
+
+코드: 0x89
+프로그램카운터: 0
+옵코드언더테스트: DUP10
+
+코드: 0x8a
+프로그램카운터: 0
+옵코드언더테스트: DUP11
+
+코드: 0x8b
+프로그램카운터: 0
+옵코드언더테스트: DUP12
+
+코드: 0x8c
+프로그램카운터: 0
+옵코드언더테스트: DUP13
+
+코드: 0x8d
+프로그램카운터: 0
+옵코드언더테스트: DUP14
+
+코드: 0x8e
+프로그램카운터: 0
+옵코드언더테스트: DUP15
+
+코드: 0x8f
+프로그램카운터: 0
+옵코드언더테스트: DUP16
+
+코드: 0x90
+프로그램카운터: 0
+옵코드언더테스트: SWAP1
+
+코드: 0x91
+프로그램카운터: 0
+옵코드언더테스트: SWAP2
+
+코드: 0x92
+프로그램카운터: 0
+옵코드언더테스트: SWAP3
+
+코드: 0x93
+프로그램카운터: 0
+옵코드언더테스트: SWAP4
+
+코드: 0x94
+프로그램카운터: 0
+옵코드언더테스트: SWAP5
+
+코드: 0x95
+프로그램카운터: 0
+옵코드언더테스트: SWAP6
+
+코드: 0x96
+프로그램카운터: 0
+옵코드언더테스트: SWAP7
+
+코드: 0x97
+프로그램카운터: 0
+옵코드언더테스트: SWAP8
+
+코드: 0x98
+프로그램카운터: 0
+옵코드언더테스트: SWAP9
+
+코드: 0x99
+프로그램카운터: 0
+옵코드언더테스트: SWAP10
+
+코드: 0x9a
+프로그램카운터: 0
+옵코드언더테스트: SWAP11
+
+코드: 0x9b
+프로그램카운터: 0
+옵코드언더테스트: SWAP12
+
+코드: 0x9c
+프로그램카운터: 0
+옵코드언더테스트: SWAP13
+
+코드: 0x9d
+프로그램카운터: 0
+옵코드언더테스트: SWAP14
+
+코드: 0x9e
+프로그램카운터: 0
+옵코드언더테스트: SWAP15
+
+코드: 0x9f
+프로그램카운터: 0
+옵코드언더테스트: SWAP16
+
+코드: 0x31
+프로그램카운터: 0
+옵코드언더테스트: BALANCE
+
+코드: 0x30
+프로그램카운터: 0
+옵코드언더테스트: ADDRESS
+
+코드: 0x32
+프로그램카운터: 0
+옵코드언더테스트: ORIGIN
+
+코드: 0x33
+프로그램카운터: 0
+옵코드언더테스트: CALLER
+
+코드: 0x34
+프로그램카운터: 0
+옵코드언더테스트: CALLVALUE
+
+코드: 0x3a
+프로그램카운터: 0
+옵코드언더테스트: GASPRICE
+
+코드: 0x40
+프로그램카운터: 0
+옵코드언더테스트: BLOCKHASH
+
+코드: 0x41
+프로그램카운터: 0
+옵코드언더테스트: COINBASE
+
+코드: 0x42
+프로그램카운터: 0
+옵코드언더테스트: TIMESTAMP
+
+코드: 0x43
+프로그램카운터: 0
+옵코드언더테스트: NUMBER
+
+코드: 0x44
+프로그램카운터: 0
+옵코드언더테스트: DIFFICULTY
+
+코드: 0x45
+프로그램카운터: 0
+옵코드언더테스트: GASLIMIT
+
+코드: 0x45
+프로그램카운터: 0
+옵코드언더테스트: GASLIMIT
+
+코드: 0x583a50
+프로그램카운터: 0
+옵코드언더테스트: PC
+
+코드: 0x5a3a50
+프로그램카운터: 0
+옵코드언더테스트: GAS
+
+코드: 0x600156
+프로그램카운터: 2
+옵코드언더테스트: JUMP
+
+코드: 0x5b6004565b
+프로그램카운터: 3
+옵코드언더테스트: JUMP
+
+코드: 0x6001600057
+프로그램카운터: 4
+옵코드언더테스트: JUMPI
+
+코드: 0x6000600057
+프로그램카운터: 4
+옵코드언더테스트: JUMPI
+
+코드: 0x3d
+프로그램카운터: 0
+옵코드언더테스트: RETURNDATASIZE
+
+코드: 0x38
+프로그램카운터: 0
+옵코드언더테스트: CODESIZE
+
+코드: 0x383a50
+프로그램카운터: 0
+옵코드언더테스트: CODESIZE
+
+코드: 0x6001
+프로그램카운터: 0
+옵코드언더테스트: PUSH1
+
+코드: 0x610102
+프로그램카운터: 0
+옵코드언더테스트: PUSH2
+
+코드: 0x62010203
+프로그램카운터: 0
+옵코드언더테스트: PUSH3
+
+코드: 0x6310111213
+프로그램카운터: 0
+옵코드언더테스트: PUSH4
+
+코드: 0x641011121314
+프로그램카운터: 0
+옵코드언더테스트: PUSH5
+
+코드: 0x65101112131415
+프로그램카운터: 0
+옵코드언더테스트: PUSH6
+
+코드: 0x6610111213141516
+프로그램카운터: 0
+옵코드언더테스트: PUSH7
+
+코드: 0x671011121314151617
+프로그램카운터: 0
+옵코드언더테스트: PUSH8
+
+코드: 0x68101112131415161718
+프로그램카운터: 0
+옵코드언더테스트: PUSH9
+
+코드: 0x6910111213141516171819
+프로그램카운터: 0
+옵코드언더테스트: PUSH10
+
+코드: 0x6a1011121314151617181920
+프로그램카운터: 0
+옵코드언더테스트: PUSH11
+
+코드: 0x6b101112131415161718192021
+프로그램카운터: 0
+옵코드언더테스트: PUSH12
+
+코드: 0x6c10111213141516171819202122
+프로그램카운터: 0
+옵코드언더테스트: PUSH13
+
+코드: 0x6d1011121314151617181920212223
+프로그램카운터: 0
+옵코드언더테스트: PUSH14
+
+코드: 0x6e101112131415161718192021222324
+프로그램카운터: 0
+옵코드언더테스트: PUSH15
+
+코드: 0x6f10111213141516171819202122232425
+프로그램카운터: 0
+옵코드언더테스트: PUSH16
+
+코드: 0x701011121314151617181920212223242526
+프로그램카운터: 0
+옵코드언더테스트: PUSH17
+
+코드: 0x71101112131415161718192021222324252627
+프로그램카운터: 0
+옵코드언더테스트: PUSH18
+
+코드: 0x7210111213141516171819202122232425262728
+프로그램카운터: 0
+옵코드언더테스트: PUSH19
+
+코드: 0x731011121314151617181920212223242526272829
+프로그램카운터: 0
+옵코드언더테스트: PUSH20
+
+코드: 0x74101112131415161718192021222324252627282930
+프로그램카운터: 0
+옵코드언더테스트: PUSH21
+
+코드: 0x7510111213141516171819202122232425262728293031
+프로그램카운터: 0
+옵코드언더테스트: PUSH22
+
+코드: 0x761011121314151617181920212223242526272829303132
+프로그램카운터: 0
+옵코드언더테스트: PUSH23
+
+코드: 0x77101112131415161718192021222324252627282930313233
+프로그램카운터: 0
+옵코드언더테스트: PUSH24
+
+코드: 0x7810111213141516171819202122232425262728293031323334
+프로그램카운터: 0
+옵코드언더테스트: PUSH25
+
+코드: 0x791011121314151617181920212223242526272829303132333435
+프로그램카운터: 0
+옵코드언더테스트: PUSH26
+
+코드: 0x7a101112131415161718192021222324252627282930313233343536
+프로그램카운터: 0
+옵코드언더테스트: PUSH27
+
+코드: 0x7b10111213141516171819202122232425262728293031323334353637
+프로그램카운터: 0
+옵코드언더테스트: PUSH28
+
+코드: 0x7c1011121314151617181920212223242526272829303132333435363738
+프로그램카운터: 0
+옵코드언더테스트: PUSH29
+
+코드: 0x7d101112131415161718192021222324252627282930313233343536373839
+프로그램카운터: 0
+옵코드언더테스트: PUSH30
+
+코드: 0x7e10111213141516171819202122232425262728293031323334353637383940
+프로그램카운터: 0
+옵코드언더테스트: PUSH31
+
+코드: 0x7f1011121314151617181920212223242526272829303132333435363738394041
+프로그램카운터: 0
+옵코드언더테스트: PUSH32
+
+코드: 0x35
+프로그램카운터: 0
+옵코드언더테스트: CALLDATALOAD
+
+코드: 0x36
+프로그램카운터: 0
+옵코드언더테스트: CALLDATASIZE
+
+코드: 0x51
+프로그램카운터: 0
+옵코드언더테스트: MLOAD
+
+코드: 0x52
+프로그램카운터: 0
+옵코드언더테스트: MSTORE
+
+코드: 0x53
+프로그램카운터: 0
+옵코드언더테스트: MSTORE8
+
+코드: 0x59
+프로그램카운터: 0
+옵코드언더테스트: MSIZE
+
+코드: 0x37
+프로그램카운터: 0
+옵코드언더테스트: CALLDATACOPY
+
+코드: 0x3a5039
+프로그램카운터: 2
+옵코드언더테스트: CODECOPY
+
+코드: 0x55
+프로그램카운터: 0
+옵코드언더테스트: SSTORE
+
+코드: 0x54
+프로그램카운터: 0
+옵코드언더테스트: SLOAD
+
+코드: 0xa0
+프로그램카운터: 0
+옵코드언더테스트: LOG0
+
+코드: 0xa1
+프로그램카운터: 0
+옵코드언더테스트: LOG1
+
+코드: 0xa2
+프로그램카운터: 0
+옵코드언더테스트: LOG2
+
+코드: 0xa3
+프로그램카운터: 0
+옵코드언더테스트: LOG3
+
+코드: 0xa4
+프로그램카운터: 0
+옵코드언더테스트: LOG4
+
+코드: 0xf3
+프로그램카운터: 0
+옵코드언더테스트: RETURN
+
+코드: 0xfd
+프로그램카운터: 0
+옵코드언더테스트: REVERT
+
+코드: 0x3e
+프로그램카운터: 0
+옵코드언더테스트: RETURNDATACOPY
+
+
+[0m[0m
+[0m  Contract: Runtime[0m
+  [32m  ✓[0m[90m should have enough gas[0m[31m (906ms)[0m
+  [32m  ✓[0m[90m should run out of gas[0m[31m (470ms)[0m
+  [32m  ✓[0m[90m (OP.CALL) should run out of gas[0m[31m (531ms)[0m
+  [32m  ✓[0m[90m (OP.CALL) should not run out of gas[0m[31m (974ms)[0m
+  [32m  ✓[0m[90m (OP.DELEGATECALL) should run out of gas[0m[31m (518ms)[0m
+  [32m  ✓[0m[90m (OP.DELEGATECALL) should not run out of gas[0m[31m (919ms)[0m
+  [32m  ✓[0m[90m (OP.STATICCALL) should run out of gas[0m[31m (524ms)[0m
+  [32m  ✓[0m[90m (OP.STATICCALL) should not run out of gas[0m[31m (884ms)[0m
+[0m    executeAndStop[0m
+first execute :  [ BigNumber {
+    s: 1,
+    e: 48,
+    c: [ 1170859, 6952188741559, 9325699290996, 39409724315265 ] },
+  BigNumber { s: 1, e: 0, c: [ 0 ] },
+  BigNumber { s: 1, e: 0, c: [ 1 ] },
+  BigNumber { s: 1, e: 0, c: [ 0 ] },
+  BigNumber { s: 1, e: 0, c: [ 0 ] },
+  BigNumber { s: 1, e: 0, c: [ 0 ] },
+  BigNumber { s: 1, e: 0, c: [ 0 ] },
+  BigNumber {
+    s: 1,
+    e: 46,
+    c: [ 87579, 6166201713699, 2303017939099, 25042452127430 ] },
+  BigNumber { s: 1, e: 0, c: [ 0 ] },
+  BigNumber { s: 1, e: 0, c: [ 0 ] },
+  BigNumber { s: 1, e: 0, c: [ 0 ] },
+  BigNumber { s: 1, e: 0, c: [ 0 ] },
+  BigNumber { s: 1, e: 0, c: [ 8 ] },
+  BigNumber { s: 1, e: 0, c: [ 0 ] } ]
+    [32m  ✓[0m[90m should allow to stop at specified op-count and export the state[0m[31m (1828ms)[0m
+[0m    initAndExecute[0m
+    [32m  ✓[0m[90m can continue from non-zero program counter[0m[31m (918ms)[0m
+스택: [ '3', '5' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m ADD[0m[31m (438ms)[0m
+스택: [ '3', '5' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m MUL[0m[31m (440ms)[0m
+스택: [ '3', '5' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SUB[0m[31m (438ms)[0m
+스택: [ '3', '6' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DIV[0m[31m (431ms)[0m
+스택: [ '3', '6' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SDIV[0m[31m (487ms)[0m
+스택: [ '3', '7' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m MOD[0m[31m (431ms)[0m
+스택: [ '3', '8' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SMOD[0m[31m (435ms)[0m
+스택: [ '5', '3', '5' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m ADDMOD[0m[31m (431ms)[0m
+스택: [ '4', '3', '6' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m MULMOD[0m[31m (429ms)[0m
+스택: [ '3', '5' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m EXP[0m[31m (484ms)[0m
+스택: [ '3', '2' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SIGNEXTEND[0m[31m (431ms)[0m
+스택: [ '5', '3', '2' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m LT[0m[31m (438ms)[0m
+스택: [ '3', '2' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m GT[0m[31m (430ms)[0m
+스택: [ '3', '2' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SLT[0m[31m (437ms)[0m
+스택: [ '3', '2' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SGT[0m[31m (424ms)[0m
+스택: [ '3', '2' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m EQ[0m[31m (491ms)[0m
+스택: [ '2' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m ISZERO[0m[31m (433ms)[0m
+스택: [ 253, 252 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m AND[0m[31m (439ms)[0m
+스택: [ 253, 252 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m OR[0m[31m (434ms)[0m
+스택: [ 253, 255 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m XOR[0m[31m (430ms)[0m
+스택: [ '0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m NOT[0m[31m (481ms)[0m
+스택: [ '3', '2' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m BYTE[0m[31m (438ms)[0m
+스택: [ '2', '3' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m POP[0m[31m (447ms)[0m
+스택: [ '2' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP1[0m[31m (426ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP2[0m[31m (448ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP3[0m[31m (497ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP4[0m[31m (449ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP5[0m[31m (444ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP6[0m[31m (451ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP7[0m[31m (445ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP8[0m[31m (441ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP9[0m[31m (517ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP10[0m[31m (446ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP11[0m[31m (489ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP12[0m[31m (445ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP13[0m[31m (459ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP14[0m[31m (497ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP15[0m[31m (450ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DUP16[0m[31m (444ms)[0m
+스택: [ '3', '2' ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP1[0m[31m (428ms)[0m
+스택: [ 1, 2, 3 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP2[0m[31m (430ms)[0m
+스택: [ 1, 2, 3, 4 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP3[0m[31m (477ms)[0m
+스택: [ 1, 2, 3, 4, 5 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP4[0m[31m (435ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP5[0m[31m (433ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP6[0m[31m (434ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP7[0m[31m (435ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP8[0m[31m (436ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP9[0m[31m (490ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP10[0m[31m (450ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP11[0m[31m (441ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP12[0m[31m (439ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP13[0m[31m (443ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP14[0m[31m (494ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP15[0m[31m (450ms)[0m
+스택: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SWAP16[0m[31m (446ms)[0m
+스택: [ '0x4ae7b3e204fed41c82d57ecd2242470196d70d02' ]
+메모리: 0x
+어카운트,코드: { accounts:
+   [ '0x4ae7b3e204fed41c82d57ecd2242470196d70d02',
+     254,
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     5,
+     1,
+     6 ],
+  accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m BALANCE[0m[31m (453ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m ADDRESS[0m[31m (427ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m ORIGIN[0m[31m (484ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m CALLER[0m[31m (427ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m CALLVALUE[0m[31m (427ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m GASPRICE[0m[31m (431ms)[0m
+스택: [ 0 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m BLOCKHASH[0m[31m (427ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m COINBASE[0m[31m (432ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m TIMESTAMP[0m[31m (483ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m NUMBER[0m[31m (431ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m DIFFICULTY[0m[31m (431ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m GASLIMIT[0m[31m (433ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 100
+가스리밋: 100
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m GASLIMIT[0m[31m (426ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PC[0m[31m (487ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 10
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m GAS[0m[31m (437ms)[0m
+스택: [ 0 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m JUMP[0m[31m (427ms)[0m
+스택: [ 0 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m JUMP[0m[31m (439ms)[0m
+스택: [ 1, 0 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m JUMPI[0m[31m (429ms)[0m
+스택: [ 0, 0 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m JUMPI[0m[31m (485ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m RETURNDATASIZE[0m[31m (429ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m CODESIZE[0m[31m (429ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m CODESIZE[0m[31m (431ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH1[0m[31m (428ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH2[0m[31m (427ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH3[0m[31m (485ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH4[0m[31m (435ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH5[0m[31m (431ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH6[0m[31m (435ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH7[0m[31m (430ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH8[0m[31m (477ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH9[0m[31m (431ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH10[0m[31m (428ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH11[0m[31m (425ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH12[0m[31m (428ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH13[0m[31m (513ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH14[0m[31m (428ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH15[0m[31m (433ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH16[0m[31m (425ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH17[0m[31m (428ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH18[0m[31m (426ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH19[0m[31m (480ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH20[0m[31m (434ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH21[0m[31m (428ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH22[0m[31m (431ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH23[0m[31m (429ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH24[0m[31m (512ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH25[0m[31m (435ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH26[0m[31m (429ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH27[0m[31m (425ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH28[0m[31m (428ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH29[0m[31m (480ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH30[0m[31m (433ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH31[0m[31m (436ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m PUSH32[0m[31m (422ms)[0m
+스택: [ 1 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x123456
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m CALLDATALOAD[0m[31m (429ms)[0m
+스택: []
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x1234
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m CALLDATASIZE[0m[31m (423ms)[0m
+스택: [ 1 ]
+메모리: 0x00000000000000000000000000000000000000000000000000000000000000667700000000000000000000000000000000000000000000000000000000000000
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m MLOAD[0m[31m (494ms)[0m
+스택: [ 21863, 1 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m MSTORE[0m[31m (433ms)[0m
+스택: [ 21863, 1 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m MSTORE8[0m[31m (432ms)[0m
+스택: []
+메모리: 0x00000000000000000000000000000000000000000000000000000000000000667700000000000000000000000000000000000000000000000000000000000000
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m MSIZE[0m[31m (429ms)[0m
+스택: [ 4, 3, 1 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x06397872cdd21945455a7fdc7921e2db7bd8e402607cad66279e899f6ae9b1da
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m CALLDATACOPY[0m[31m (428ms)[0m
+스택: [ 2, 1, 1 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m CODECOPY[0m[31m (484ms)[0m
+스택: [ 5, 0 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SSTORE[0m[31m (437ms)[0m
+스택: [ 0 ]
+메모리: 0x
+어카운트,코드: { accounts:
+   [ '0x0f572e5295c57f15886f9b263e2f6d2d6c7b5ec6',
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     5 ],
+  accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m SLOAD[0m[31m (449ms)[0m
+스택: [ 4, 2 ]
+메모리: 0x0102030405060708091011121314151617181920212223242526272829303132
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m LOG0[0m[31m (432ms)[0m
+스택: [ 1383, 4, 2 ]
+메모리: 0x0102030405060708091011121314151617181920212223242526272829303132
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m LOG1[0m[31m (444ms)[0m
+스택: [ 291, 1383, 4, 2 ]
+메모리: 0x0102030405060708091011121314151617181920212223242526272829303132
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m LOG2[0m[31m (492ms)[0m
+스택: [ 2439, 291, 1383, 4, 2 ]
+메모리: 0x0102030405060708091011121314151617181920212223242526272829303132
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m LOG3[0m[31m (447ms)[0m
+스택: [ 660, 2439, 291, 1383, 4, 2 ]
+메모리: 0x0102030405060708091011121314151617181920212223242526272829303132
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m LOG4[0m[31m (439ms)[0m
+스택: [ 0, 0 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m RETURN[0m[31m (433ms)[0m
+스택: [ 0, 0 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m REVERT[0m[31m (430ms)[0m
+스택: [ 0, 0, 0 ]
+메모리: 0x
+어카운트,코드: { accounts: [], accountsCode: '' }
+콜데이터: 0x
+블록가스리밋: 0xfffffffffffff
+가스리밋: 0xfffffffffffff
+로그: []
+로그데이터: 0x
+    [32m  ✓[0m[90m RETURNDATACOPY[0m[31m (427ms)[0m
+
+
+[92m [0m[32m 137 passing[0m[90m (1m)[0m
+

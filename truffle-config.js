@@ -24,6 +24,13 @@ module.exports = {
       network_id: '*', // eslint-disable-line camelcase
       gas: 0xfffffffffffff,
       gasPrice: 0x01,
-    },
+    }
+  },
+  mocha: {
+    reporter: 'eth-gas-reporter',
+    reporterOptions : {
+      currency: 'USD',
+      gasPrice: 21
+    }
   },
 };
